@@ -77,6 +77,7 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> 
                     auth.requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/ai/**").permitAll()
                         .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/products/**").permitAll()
                         .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/rewards/coupons").permitAll()
                         .requestMatchers("/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()

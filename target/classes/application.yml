@@ -30,6 +30,11 @@ bravo:
     jwtSecret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
     jwtExpirationMs: ${JWT_EXPIRATION:86400000} # 24 hours
 
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:AIzaSyCPMGjy8a2pvhkCl3AmRTlImYJeoziLZ78}
+  model: ${GEMINI_MODEL:gemini-2.0-flash}
+
 server:
   port: ${PORT:8080}
   error:
