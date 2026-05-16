@@ -31,7 +31,7 @@ bravo:
     jwtExpirationMs: ${JWT_EXPIRATION:86400000} # 24 hours
 
 server:
-  port: 5050
+  port: ${PORT:8080}
   error:
     include-message: always
 
